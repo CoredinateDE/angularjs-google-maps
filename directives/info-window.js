@@ -113,7 +113,8 @@
             }
             $timeout(function() { // to avoid racing condition
               var infoWindowContainerEl = infoWindow.content.parentElement.parentElement.parentElement;
-              infoWindowContainerEl.className = "ng-map-info-window";
+              // Fehler der Google API!  https://github.com/allenhwkim/angularjs-google-maps/issues/882
+              //infoWindowContainerEl.className = "ng-map-info-window";
             });
           });
         });
